@@ -61,12 +61,12 @@
                         }
                     ],
                     "samples": [
+                        "scale up  {clusterTag} cluster by {number} instances",
+                        "scale up  {clusterTag} cluster by {number} VM instance",
+                        "scale up {clusterTag}  cluster by {number} instance",
                         "add {number} instances to {clusterTag} cluster",
                         "add {number} instance to {clusterTag} cluster",
                         "scale up {clusterTag} cluster by {number} VM instances",
-                        "scale up cluster {clusterTag} by {number} instance",
-                        "scale up cluster {clusterTag} by {number} VM instance",
-                        "scale up cluster {clusterTag} by {number} instances",
                         "add {number} instance to the {clusterTag} cluster",
                         "add {number} instances to the {clusterTag} cluster"
                     ]
@@ -172,6 +172,8 @@
                         }
                     ],
                     "samples": [
+                        "what is average cpu usage of {hostTag} cluster",
+                        "average cpu usage of {hostTag} cluster",
                         "cpu utilization of {hostTag} cluster",
                         "average cpu utilization of {hostTag} cluster",
                         "average cpu utilization in {hostTag} cluster",
