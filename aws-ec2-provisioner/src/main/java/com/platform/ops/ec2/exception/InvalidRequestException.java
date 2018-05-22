@@ -3,6 +3,8 @@ package com.platform.ops.ec2.exception;
 /**
  * Indicates host provisioning request is invalid.
  *
+ * @author Srinivasa Prasad Sunnapu
+ *
  */
 public class InvalidRequestException extends HostProvisioningFailedException {
 

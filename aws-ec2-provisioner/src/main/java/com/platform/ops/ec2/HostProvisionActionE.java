@@ -3,6 +3,8 @@ package com.platform.ops.ec2;
 /**
  * Allowed set of provisioning actions on open-stack host instances.
  *
+ * @author Srinivasa Prasad Sunnapu
+ *
  */
 public enum HostProvisionActionE {
 

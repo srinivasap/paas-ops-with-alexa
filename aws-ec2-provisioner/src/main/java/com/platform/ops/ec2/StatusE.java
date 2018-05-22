@@ -2,6 +2,8 @@ package com.platform.ops.ec2;
 
 /**
  * Host status indicator
+ *
+ * @author Srinivasa Prasad Sunnapu
  */
 public enum StatusE {
     BUILD,

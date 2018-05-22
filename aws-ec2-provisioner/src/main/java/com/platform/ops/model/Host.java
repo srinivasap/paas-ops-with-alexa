@@ -6,6 +6,11 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
+/**
+ * Model object representing host attributes.
+ *
+ * @author Srinivasa Prasad Sunnapu
+ */
 @Component
 @ConfigurationProperties(prefix = "aws")
 public class Host {

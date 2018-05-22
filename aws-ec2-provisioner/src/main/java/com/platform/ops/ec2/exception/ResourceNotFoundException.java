@@ -3,6 +3,8 @@ package com.platform.ops.ec2.exception;
 /**
  * Indicates resource request is not found.
  *
+ * @author Srinivasa Prasad Sunnapu
+ *
  */
 public class ResourceNotFoundException extends RuntimeException {
 

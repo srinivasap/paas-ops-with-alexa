@@ -3,6 +3,7 @@ package com.platform.ops.ec2.exception;
 /**
  * Indicates failure with host provisioning request.
  *
+ * @author Srinivasa Prasad Sunnapu
  */
 public class HostProvisioningFailedException extends Exception {
 

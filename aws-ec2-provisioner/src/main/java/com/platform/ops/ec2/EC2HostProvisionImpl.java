@@ -22,6 +22,8 @@ import java.util.*;
 
 /**
  * Manages the host provisioning requests.
+ *
+ * @author Srinivasa Prasad Sunnapu
  */
 public class EC2HostProvisionImpl implements HostProvision {
 

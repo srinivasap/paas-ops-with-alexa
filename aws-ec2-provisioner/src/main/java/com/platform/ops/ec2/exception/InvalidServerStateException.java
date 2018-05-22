@@ -3,6 +3,8 @@ package com.platform.ops.ec2.exception;
 /**
  * Indicates paas end-point in inconsistent state to fulfill host provisioning request.
  *
+ * @author Srinivasa Prasad Sunnapu
+ *
  */
 public class InvalidServerStateException extends HostProvisioningFailedException {
 

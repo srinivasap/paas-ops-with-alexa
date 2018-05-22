@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-java-sdk-workmail:1.11.323">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-workmail/1.11.323/cd60e76dd5cb1f3fd7a0cb1ba2eaaf1b267ebe19/aws-java-sdk-workmail-1.11.323.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-workmail/1.11.323/d78f4ecd202f780232225bad527cee0cb9c55a7d/aws-java-sdk-workmail-1.11.323-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

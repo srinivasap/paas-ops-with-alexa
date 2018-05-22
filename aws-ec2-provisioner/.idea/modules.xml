@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aws-ec2-provisioner.iml" filepath="$PROJECT_DIR$/.idea/modules/aws-ec2-provisioner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aws-ec2-provisioner_main.iml" filepath="$PROJECT_DIR$/.idea/modules/aws-ec2-provisioner_main.iml" group="aws-ec2-provisioner" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/aws-ec2-provisioner_test.iml" filepath="$PROJECT_DIR$/.idea/modules/aws-ec2-provisioner_test.iml" group="aws-ec2-provisioner" />
+    </modules>
+  </component>
+</project>

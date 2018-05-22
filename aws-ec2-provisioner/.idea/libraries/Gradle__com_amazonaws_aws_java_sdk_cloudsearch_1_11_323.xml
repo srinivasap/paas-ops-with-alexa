@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-java-sdk-cloudsearch:1.11.323">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-cloudsearch/1.11.323/b93d0ded58d9cd219402f4df81b140b0064b7d82/aws-java-sdk-cloudsearch-1.11.323.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-cloudsearch/1.11.323/c5b733dbbd7e75b646427732c127b470217abcd2/aws-java-sdk-cloudsearch-1.11.323-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
