@@ -1,0 +1,367 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "ops helper",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CreateVMInstancesIntent",
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "image",
+                            "type": "ImageTag"
+                        }
+                    ],
+                    "samples": [
+                        "build {number} instance of {image} image",
+                        "build {number} instances of {image} image",
+                        "create {number} instances of {image} image",
+                        "create {number} instance of {image} image",
+                        "create {number} instance with {image} image",
+                        "create {number} instances with {image} image",
+                        "create {number} instances using {image} image",
+                        "create {number} instance using {image} image",
+                        "create {number} VM instance using {image} image",
+                        "create {number} VM instances using {image} image"
+                    ]
+                },
+                {
+                    "name": "ScaleUpServerGroupIntent",
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "clusterTag",
+                            "type": "HostTag"
+                        }
+                    ],
+                    "samples": [
+                        "add {number} instances to {clusterTag} cluster",
+                        "add {number} instance to {clusterTag} cluster",
+                        "scale up {clusterTag} cluster by {number} VM instances",
+                        "scale up cluster {clusterTag} by {number} instance",
+                        "scale up cluster {clusterTag} by {number} VM instance",
+                        "scale up cluster {clusterTag} by {number} instances",
+                        "add {number} instance to the {clusterTag} cluster",
+                        "add {number} instances to the {clusterTag} cluster"
+                    ]
+                },
+                {
+                    "name": "ScaleDownServerGroupIntent",
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "clusterTag",
+                            "type": "HostTag"
+                        }
+                    ],
+                    "samples": [
+                        "remove {number} instance from {clusterTag} cluster",
+                        "remove {number} instances from the {clusterTag} cluster",
+                        "scale down {clusterTag} cluster by {number} VM instance",
+                        "scale down {clusterTag} cluster by {number} instances",
+                        "scale down {clusterTag} cluster by {number} instance",
+                        "scale down {clusterTag} cluster by {number} VM instances",
+                        "remove {number} instance from the {clusterTag} cluster",
+                        "remove {number} instances from {clusterTag} cluster"
+                    ]
+                },
+                {
+                    "name": "ResizeServerGroupIntent",
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "clusterTag",
+                            "type": "HostTag"
+                        }
+                    ],
+                    "samples": [
+                        "resize {clusterTag} cluster to {number} instances",
+                        "resize {clusterTag} cluster to  {number} VM instances",
+                        "resize {clusterTag} cluster to {number}  instance",
+                        "resize {clusterTag} cluster to {number} VM instance",
+                        "resize {clusterTag} cluster to maximum of {number} VM instance",
+                        "resize {clusterTag} server group to maximum of {number} instances",
+                        "resize {clusterTag} server group to maximum of {number} VM instances",
+                        "resize {clusterTag} cluster to maximum of {number} VM instances"
+                    ]
+                },
+                {
+                    "name": "FindPendingRequestIntent",
+                    "slots": [],
+                    "samples": [
+                        "what is the status of my previous request",
+                        "what is the status of previous request",
+                        "status of previous request",
+                        "status of my previous request",
+                        "any instance in pending state",
+                        "is there any instance in pending state",
+                        "are there any instances in pending state"
+                    ]
+                },
+                {
+                    "name": "QueryServerGroupSizeIntent",
+                    "slots": [
+                        {
+                            "name": "clusterTag",
+                            "type": "HostTag"
+                        }
+                    ],
+                    "samples": [
+                        "how many instances in {clusterTag} cluster",
+                        "how many instances in the {clusterTag} cluster",
+                        "size of {clusterTag} cluster",
+                        "size of {clusterTag} server group",
+                        "how many VM instances in the {clusterTag} cluster"
+                    ]
+                },
+                {
+                    "name": "QueryVMInstancesParamIntent",
+                    "slots": [
+                        {
+                            "name": "clusterTag",
+                            "type": "HostTag"
+                        }
+                    ],
+                    "samples": [
+                        "type of instance used in {clusterTag} cluster",
+                        "what is the instance used in {clusterTag} cluster",
+                        "what is the VM instance type used by {clusterTag} cluster",
+                        "VM instance type used by {clusterTag} cluster",
+                        "what is the instance type used by {clusterTag} cluster",
+                        "instance type used by {clusterTag} cluster"
+                    ]
+                },
+                {
+                    "name": "QueryCpuUtilization",
+                    "slots": [
+                        {
+                            "name": "hostTag",
+                            "type": "HostTag"
+                        }
+                    ],
+                    "samples": [
+                        "cpu utilization of {hostTag} cluster",
+                        "average cpu utilization of {hostTag} cluster",
+                        "average cpu utilization in {hostTag} cluster",
+                        "cpu utilization in {hostTag} cluster",
+                        "cpu utilization of an instance in {hostTag} cluster",
+                        "what is cpu utilization of an instance in {hostTag} cluster",
+                        "average cpu utilization of an instance in {hostTag} cluster"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "ImageTag",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "app"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "InstanceType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "t two micro"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "HostTag",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "test"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "app"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "CreateVMInstancesIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.311789244128"
+                    },
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "image",
+                            "type": "ImageTag",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "ScaleUpServerGroupIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1457921460698"
+                    },
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "clusterTag",
+                            "type": "HostTag",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "ScaleDownServerGroupIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.327005451138"
+                    },
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "clusterTag",
+                            "type": "HostTag",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "ResizeServerGroupIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1337480826840"
+                    },
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "clusterTag",
+                            "type": "HostTag",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Intent.311789244128",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "creating cluster of size {number} using {image} image, proceed?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1457921460698",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "adding {number} instance to the {clusterTag} cluster, proceed?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.327005451138",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "removing {number} instance from the {clusterTag} cluster, proceed?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1337480826840",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "resizing {clusterTag} cluster size to {number} instances, proceed?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.98049073890",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Changing instance type to {type} , proceed?"
+                    }
+                ]
+            }
+        ]
+    }
+}
